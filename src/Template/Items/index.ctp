@@ -34,6 +34,9 @@
     <?php endforeach; ?>
     </tbody>
     </table>
+    
+    <?= $this->Html->link(__('Novo item'), ['action' => 'add']) ?>
+    
     <div class="paginator">
         <ul class="pagination">
             <?= $this->Paginator->prev('< ' . __('previous')) ?>

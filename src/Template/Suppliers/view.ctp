@@ -1,14 +1,3 @@
-<div class="actions columns large-2 medium-3">
-    <h3><?= __('Actions') ?></h3>
-    <ul class="side-nav">
-        <li><?= $this->Html->link(__('Edit Supplier'), ['action' => 'edit', $supplier->id]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Supplier'), ['action' => 'delete', $supplier->id], ['confirm' => __('Are you sure you want to delete # {0}?', $supplier->id)]) ?> </li>
-        <li><?= $this->Html->link(__('List Suppliers'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Supplier'), ['action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Prices'), ['controller' => 'Prices', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Price'), ['controller' => 'Prices', 'action' => 'add']) ?> </li>
-    </ul>
-</div>
 <div class="suppliers view large-10 medium-9 columns">
     <h2><?= h($supplier->name) ?></h2>
     <div class="row">

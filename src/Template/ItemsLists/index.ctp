@@ -40,6 +40,9 @@
     <?php endforeach; ?>
     </tbody>
     </table>
+    
+    <?= $this->Html->link(__('Novo item da lista'), ['action' => 'add']) ?>
+    
     <div class="paginator">
         <ul class="pagination">
             <?= $this->Paginator->prev('< ' . __('previous')) ?>

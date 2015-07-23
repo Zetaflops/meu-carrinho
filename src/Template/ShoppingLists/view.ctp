@@ -1,16 +1,3 @@
-<div class="actions columns large-2 medium-3">
-    <h3><?= __('Actions') ?></h3>
-    <ul class="side-nav">
-        <li><?= $this->Html->link(__('Edit Shopping List'), ['action' => 'edit', $shoppingList->id]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Shopping List'), ['action' => 'delete', $shoppingList->id], ['confirm' => __('Are you sure you want to delete # {0}?', $shoppingList->id)]) ?> </li>
-        <li><?= $this->Html->link(__('List Shopping Lists'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Shopping List'), ['action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Items Lists'), ['controller' => 'ItemsLists', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Items List'), ['controller' => 'ItemsLists', 'action' => 'add']) ?> </li>
-    </ul>
-</div>
 <div class="shoppingLists view large-10 medium-9 columns">
     <h2><?= h($shoppingList->name) ?></h2>
     <div class="row">

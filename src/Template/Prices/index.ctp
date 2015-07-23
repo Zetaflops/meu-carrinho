@@ -1,13 +1,3 @@
-<!--<div class="actions columns large-2 medium-3">
-    <h3><?= __('Actions') ?></h3>
-    <ul class="side-nav">
-        <li><?= $this->Html->link(__('New Price'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Suppliers'), ['controller' => 'Suppliers', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Supplier'), ['controller' => 'Suppliers', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Items'), ['controller' => 'Items', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Item'), ['controller' => 'Items', 'action' => 'add']) ?></li>
-    </ul>
-</div>-->
 <div class="prices index large-10 medium-9 columns">
     <table cellpadding="0" cellspacing="0">
     <thead>
@@ -46,6 +36,9 @@
     <?php endforeach; ?>
     </tbody>
     </table>
+    
+    <?= $this->Html->link(__('Novo preço'), ['action' => 'add']) ?>
+    
     <div class="paginator">
         <ul class="pagination">
             <?= $this->Paginator->prev('< ' . __('previous')) ?>
