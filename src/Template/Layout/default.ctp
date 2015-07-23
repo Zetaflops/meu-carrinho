@@ -47,6 +47,18 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
         <div id="content">
             <?= $this->Flash->render() ?>
+            
+            <div class="actions columns large-2 medium-3">
+				<h3><?= __('Menu') ?></h3>
+				<ul class="side-nav">
+					<!--<li><?= $this->Html->link(__('New Item'), ['action' => 'add']) ?></li>-->
+					<li><?= $this->Html->link(__('Preços'), ['controller' => 'Prices', 'action' => 'index']) ?></li>
+					<li><?= $this->Html->link(__('Fornecedores'), ['controller' => 'Suppliers', 'action' => 'index']) ?></li>
+					<li><?= $this->Html->link(__('Itens'), ['controller' => 'Items', 'action' => 'index']) ?></li>
+					<li><?= $this->Html->link(__('Lista de compras'), ['controller' => 'ShoppingLists', 'action' => 'index']) ?></li>
+					<li><?= $this->Html->link(__('Usuários'), ['controller' => 'Users', 'action' => 'index']) ?></li>
+				</ul>
+			</div>
 
             <div class="row">
                 <?= $this->fetch('content') ?>
